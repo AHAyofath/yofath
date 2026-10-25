@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1020">
+<meta name="description" content="Welcome to YoFath, my personal portfolio.">
+<title>YoFath — My World</title>
+<style>
+:root {
+  --bg:#0b1020;
+  --panel:#131c30;
+  --blue:#60a5fa;
+  --text:#f8fafc;
+  --muted:#a9b7ce;
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth}
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial,sans-serif;
+  line-height:1.65;
+}
+a {color:inherit;text-decoration:none}
+nav {
+  max-width:1050px;
+  margin:auto;
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+}
+.logo {font-size:27px;font-weight:800}
+.logo span {color:var(--blue)}
+.links {display:flex;gap:18px;font-size:14px}
+.links a:hover {color:var(--blue)}
+.hero {
+  max-width:1050px;
+  margin:auto;
+  padding:100px 22px 90px;
+  text-align:center;
+}
+.eyebrow {
+  color:var(--blue);
+  font-weight:bold;
+  letter-spacing:3px;
+  font-size:12px;
+}
+h1 {
+  font-size:clamp(42px,8vw,76px);
+  line-height:1.12;
+  letter-spacing:-2px;
+  margin:20px 0;
+}
+h1 span {
+  color:var(--blue);
+}
+.intro {
+  max-width:590px;
+  margin:0 auto 28px;
+  color:var(--muted);
+  font-size:17px;
+}
+.button {
+  display:inline-block;
+  padding:12px 21px;
+  margin:5px;
+  border-radius:10px;
+  background:var(--blue);
+  color:#08101f;
+  font-weight:bold;
+  transition:transform .2s;
+}
+.button:hover {transform:translateY(-3px)}
+.button.secondary {
+  color:var(--text);
+  background:var(--panel);
+  border:1px solid #33415c;
+}
+section {
+  max-width:1000px;
+  margin:auto;
+  padding:65px 22px;
+}
+.section-title {
+  font-size:32px;
+  margin:0 0 12px;
+}
+.sub {
+  color:var(--muted);
+  margin-top:0;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+  margin-top:25px;
+}
+.card {
+  background:var(--panel);
+  border:1px solid #26344d;
+  border-radius:18px;
+  padding:25px;
+  transition:transform .2s,border-color .2s;
+}
+.card:hover {
+  transform:translateY(-4px);
+  border-color:var(--blue);
+}
+.card h3 {margin:10px 0}
+.card p {color:var(--muted);margin-bottom:0}
+.symbol {font-size:27px}
+.socials {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+.socials a {
+  border:1px solid #33415c;
+  background:var(--panel);
+  padding:11px 16px;
+  border-radius:10px;
+}
+.socials a:hover {
+  border-color:var(--blue);
+  color:var(--blue);
+}
+footer {
+  text-align:center;
+  padding:28px 15px;
+  border-top:1px solid #26344d;
+  color:var(--muted);
+  font-size:13px;
+}
+@media(max-width:600px) {
+  nav {padding:16px}
+  .links {gap:10px;font-size:12px}
+  .hero {padding:75px 20px}
+  .grid {grid-template-columns:1fr}
+  section {padding:48px 20px}
+  h1 {letter-spacing:-1px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="#home">YoFath<span>.</span></a>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <header class="hero" id="home">
+    <div class="eyebrow">WELCOME TO MY WORLD</div>
+    <h1>Building my<br><span>own future.</span></h1>
+    <p class="intro">
+      A personal space for my journey, creativity,
+      projects and ideas. This is where my story begins.
+    </p>
+    <a class="button" href="#projects">Explore my world ↗</a>
+    <a class="button secondary" href="#about">About me</a>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">A little about me</h2>
+    <p class="sub">
+      Every big journey starts with a small step.
+      I'm learning, exploring new ideas and building
+      things that reflect my vision.
+    </p>
+    <div class="grid">
+      <article class="card">
+        <div class="symbol">🎯</div>
+        <h3>My vision</h3>
+        <p>Keep learning, think creatively and turn ideas into reality.</p>
+      </article>
+      <article class="card">
+        <div class="symbol">🚀</div>
+        <h3>My journey</h3>
+        <p>Discover new skills, create projects and improve every day.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">My projects</h2>
+    <p class="sub">A place to showcase what I create.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="symbol">🌐</div>
+        <h3>YoFath Website</h3>
+        <p>My personal corner of the internet, built for my journey.</p>
+      </article>
+      <article class="card">
+        <div class="symbol">💡</div>
+        <h3>Future Ideas</h3>
+        <p>New ideas and creative experiments coming soon.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Let's connect.</h2>
+    <p class="sub">Follow my journey and find me on social media.</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/maiadibhou/"
+         target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> YoFath. Made with purpose.
+</footer>
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+</body>
+</html>
